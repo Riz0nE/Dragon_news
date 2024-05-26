@@ -7,7 +7,7 @@ import first from '../../../assets/editorsInsight1.png'
 const Leftnav = () => {
     const [categories, setCategories] = useState([]);
     useEffect(() => {
-        fetch('http://localhost:5000/categories')
+        fetch('https://dragon-news-server-4gafy97ra-rifat-rizwans-projects.http://localhost:5000/.app/categories')
             .then(res => res.json())
             .then(data => setCategories(data))
             .catch(error => console.error(error))

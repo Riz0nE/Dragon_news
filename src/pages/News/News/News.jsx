@@ -1,4 +1,4 @@
-import React from 'react';
+
 import { Button, Card } from 'react-bootstrap';
 import { FaArrowLeft } from 'react-icons/fa';
 import { Link, useLoaderData } from 'react-router-dom';
@@ -7,7 +7,7 @@ import EditorsInsight from './EditorsInsight/EditorsInsight';
 
 const News = () => {
     const news = useLoaderData();
-    const { title, details, _id, image_url, category_id } = news;
+    const { title, details, image_url, category_id } = news;
     return (
         <div>
             <Card >
